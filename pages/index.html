@@ -1,47 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/main.css" />
     <title>Brath</title>
   </head>
   <body>
     <nav class="nav__wrapper">
-      <div class="nav__logo__wrapper">
-        <img class="logo" src="" />
-      </div>
-      <div class="top__wrappper">
-        <div class="row">
-          <a class="text text--bold-16">Die Metzgerei</a>
-          <a class="text text--bold-16">Dry Aged</a>
-          <a class="text text--bold-16">Fleischversand</a>
-          <a class="text text--bold-16">Events/Kurse</a>
-          <a class="text text--bold-16">Partyservice</a>
-          <a class="text text--bold-16">Tagesessen</a>
-          <a class="text text--bold-16">Impressum</a>
-          <a class="text text--bold-16">Kontakt</a>
-          <div class="row">
-            <a class="link">
-              <img class="pdf__icon" />
-              <span class="textx text--bold-14">download</span>
-            </a>
+      <div class="top__wrapper">
+        <div class="nav__logo__wrapper">
+          <img class="nav__logo" src="/assets/icons/logo/logo-with-dots.svg" />
+        </div>
+        <div class="content__wrapper__top">
+          <div class="nav__links__wrapper">
+            <a class="text text--regular-16">Die Metzgerei</a>
+            <a class="text text--regular-16">Dry Aged</a>
+            <a class="text text--regular-16">Fleischversand</a>
+            <a class="text text--regular-16">Events/Kurse</a>
+            <a class="text text--regular-16">Partyservice</a>
+            <a class="text text--regular-16">Tagesessen</a>
+            <a class="text text--regular-16">Impressum</a>
+            <a class="text text--regular-16">Kontakt</a>
           </div>
+          <a class="link">
+            <div class="row">
+              <img class="pdf__icon" src="/assets/icons/pdf-icon.svg" />
+              <span class="text text--bold-14">download</span>
+            </div>
+          </a>
         </div>
       </div>
       <div class="bottom__wrapper">
-        <div class="row">
-          <img class="img__clock" src="s" />
-          <p class="text text--regular-14">
-            <span class="text text--bold-14">Opens</span>Di. - Fr.: 07:00-13:00
-            und 15:00-18:30. Sa.: 07:30 - 12:30
-          </p>
+        <div class="content__wrapper__bottom">
+          <div class="row">
+            <img class="img__clock" src="" />
+            <p class="text text--regular-14">
+              <span class="text text--bold-14">Opens: </span>Di. - Fr.:
+              07:00-13:00 und 15:00-18:30. Sa.: 07:30 - 12:30
+            </p>
+          </div>
         </div>
       </div>
     </nav>
     <section class="hero__section">
-      <div class="hero__wrapper">
-        <img class="hero__image" src="" />
-        <div class="hero__content__wrapper">
+      <div class="hero__slide__wrapper">
+        <img class="hero__image" src="/assets/hero-image.svg" />
+        <div class="content-wrapper">
           <div class="row row--vertical">
             <h1 class="text text--bold-38">Heiko Brath Metzgermeister</h1>
             <p class="text text--300-16">
@@ -55,9 +66,26 @@
     </section>
     <section class="gallery__section">
       <div class="page__container">
-        <div class="5050__columns">
-          <div class="50__column">
-            <div class="row row--vertical">
+        <div class="gallery__columns">
+          <div class="column--12">
+            <div class="gallery__grid">
+              <img
+                class="large__image__gallery"
+                src="/assets/gallery-section/gallery1.svg"
+              /><img
+                class="small__image__gallery"
+                src="/assets/gallery-section/gallery2.svg"
+              /><img
+                class="small__image__gallery"
+                src="/assets/gallery-section/gallery3.svg"
+              /><img
+                class="small__image__gallery"
+                src="/assets/gallery-section/gallery4.svg"
+              />
+            </div>
+          </div>
+          <div class="column--12">
+            <div class="row row--vertical gap--none">
               <h2 class="text text--bold-32">Dry aged</h2>
               <p class="text text--bold-22">Alte Wutz, Dry Aged</p>
             </div>
@@ -66,131 +94,134 @@
               Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
               nam Aperol Spritz probatus pertinax.
             </p>
+            <p class="text text--300-16">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
             <div class="row">
-              <button href="" class="default__button default__button--red">
-                Grillkurs
-              </button>
-              <button href="" class="default__button default__button--red">
-                Grillkurs
-              </button>
-            </div>
-          </div>
-          <div class="50__column">
-            <div class="gallery__grid">
-              <img class="large__image__gallery" src="" /><img
-                class="small__image__gallery"
-                src=""
-              /><img class="small__image__gallery" src="" /><img
-                class="small__image__gallery"
-                src=""
-              />
+              <button href="" class="default__button--red">Grillkurs</button>
+              <button href="" class="default__button--red">Grillkurs</button>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="5050__section">
-      <div class="50__column">
-        <div class="row row--vertical">
+    <section class="split__section">
+      <div class="split__column split__column--padding-backgroundColor">
+        <div class="row row--vertical gap--xl">
           <h2 class="text text--bold-32">Buchen Sie den Grillkurs jetzt</h2>
           <ul>
-            <li class="text text-300-16">professioneller Lehrer</li>
-            <li class="text text-300-16">ausgezeichneter Metzger</li>
-            <li class="text text-300-16">1 Tag</li>
-            <li class="text text-300-16">lernen Sie die Kunst des Grillens</li>
+            <li class="text text--300-16">professioneller Lehrer</li>
+            <li class="text text--300-16">ausgezeichneter Metzger</li>
+            <li class="text text--300-16">1 Tag</li>
+            <li class="text text--300-16">lernen Sie die Kunst des Grillens</li>
           </ul>
-          <button href="" class="default__button">Grillkurs</button>
+          <button href="" class="default__button--white">Grillkurs</button>
         </div>
       </div>
-      <div class="50__column"><img class="50__img" src="" /></div>
+      <div class="split__column">
+        <img class="split__img" src="/assets/food-5050.svg" />
+      </div>
     </section>
-    <section>
+    <section class="section">
       <div class="page__container">
-        <div class="row row--vertical">
-          <div class="row row--vertical">
+        <div class="row row--vertical gap--xl">
+          <div class="row row--vertical gap--none">
             <h2 class="text text--bold-32">Dry aged</h2>
             <p class="text text--bold-22">Alte Wutz, Dry Aged</p>
           </div>
-          <p class="text text--300-16">
-            Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
-            argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
-            Aperol Spritz probatus pertinax.
-          </p>
-          <button href="" class="default__button default__button--red">
-            Grillkurs
-          </button>
+          <div class="row row--vertical row--text-center">
+            <p class="text text--300-16">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
+            <p class="text text--300-16">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
+          </div>
+          <button href="" class="default__button--red">Grillkurs</button>
         </div>
       </div>
     </section>
     <section class="break__section">
       <div class="page__container">
         <div class="gray__line"></div>
-        <div class="bw__logo__wrapper"><img src="" class="bw__logo" /></div>
+        <div class="bw__logo__wrapper">
+          <img src="/assets/icons/logo/bl-withdots.svg" class="bw__logo" />
+        </div>
         <div class="gray__line"></div>
       </div>
     </section>
-    <section>
+    <section class="section">
       <div class="page__container">
-        <div class="row">
+        <div class="foodnav__grid">
           <a
-            ><img src="" />
+            ><img src="/assets/food-5050.svg" />
             <div><p class="text text--bold-16">Sample</p></div>
           </a>
           <a
-            ><img src="" />
+            ><img src="/assets/food-5050.svg" />
             <div><p class="text text--bold-16">Sample</p></div>
           </a>
           <a
-            ><img src="" />
+            ><img src="/assets/food-5050.svg" />
             <div><p class="text text--bold-16">Sample</p></div>
           </a>
           <a
-            ><img src="" />
+            ><img src="/assets/food-5050.svg" />
             <div><p class="text text--bold-16">Sample</p></div>
           </a>
         </div>
       </div>
     </section>
-    <section class="5050__section">
-      <div class="50__column"><img class="50__img" src="" /></div>
-      <div class="50__column">
-        <div class="row row--vertical">
+    <section class="split__section">
+      <div class="split__column split__column--padding-backgroundColor">
+        <div class="row row--vertical gap--xl">
           <div class="row row--vertical">
-            <h2 class="text text--bold-32">Dry aged</h2>
-            <p class="text text--bold-22">Alte Wutz, Dry Aged</p>
+            <h2 class="text text--bold-32">Buchen Sie den Grillkurs jetzt</h2>
+            <p class="text text--bold-22">
+              Turnbeutel nostrudexercitation ullamco Sprechen Sie deutsch
+            </p>
           </div>
-          <p class="text text--300-16">
-            Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
-            argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
-            Aperol Spritz probatus pertinax.
-          </p>
-          <p class="text text--300-16">
-            Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et. Tollit
-            argumentum ius an. Pfannkuchen lobortis elaboraret per ne, nam
-            Aperol Spritz probatus pertinax.
-          </p>
+          <div class="row row--vertical row--text-center">
+            <p class="text text--300-16">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
+            <p class="text text--300-16">
+              Deutsches Ipsum Dolor deserunt dissentias Grimms Märchen et.
+              Tollit argumentum ius an. Pfannkuchen lobortis elaboraret per ne,
+              nam Aperol Spritz probatus pertinax.
+            </p>
+          </div>
         </div>
       </div>
+      <div class="split__column">
+        <img class="split__img" src="/assets/spices-5050.svg" />
+      </div>
     </section>
-    <section>
+    <section class="section delivery__section">
       <div class="page__container">
-        <div class="row row--vertical">
+        <div class="row row--vertical gap--xl">
           <h2 class="text text--bold-32">Fleischversand</h2>
-          <button class="default__button">Jetzt bestellen</button>
+          <button class="default__button--white">Jetzt bestellen</button>
         </div>
       </div>
     </section>
-    <section>
+    <section class="section jre__section">
       <div class="page__container">
-        <div class="row">
-          <img src="" class="jre__logo" />
-          <div class="row row--vertical">
+        <div class="row row--vertical gap--xl">
+          <img src="/assets/icons/logo/jre.svg" class="jre__logo" />
+          <div class="row row--vertical row--text-center gap--xl">
             <h2 class="text text--bold-32">
               Metzgerei Brath ist Mitglied im Genussnetzwerk
             </h2>
-            <button class="default__button default__button--red">
-              Gehen zu site
-            </button>
+            <button class="default__button--red">Gehen zu site</button>
           </div>
         </div>
       </div>
@@ -198,17 +229,39 @@
     <section class="break__section">
       <div class="page__container">
         <div class="gray__line"></div>
-        <div class="bw__logo__wrapper"><img src="" class="bw__logo" /></div>
+        <div class="bw__logo__wrapper">
+          <img src="/assets//icons/logo/bl-withdots.svg" class="bw__logo" />
+        </div>
         <div class="gray__line"></div>
       </div>
     </section>
-    <section>
+    <section class="section">
       <div class="page__container">
-        <div class="row">
-          <h2 class="text text--bold-32">Auszeichnungen</h2>
+        <div class="awards__grid">
+          <div class="first__cell--awards">
+            <h2 class="text text--bold-32">Auszeichnungen</h2>
+          </div>
           <div class="row row--vertical">
-            <img src="img__award" />
-            <p class="text text-300-16">
+            <img " src="/assets/icons/awards/award1.svg" />
+            <p class="text text--300-16">
+              Tollit argumentum genau Saepe lobortis
+            </p>
+          </div>
+          <div class="row row--vertical">
+            <img src="/assets/icons/awards/award2.svg" />
+            <p class="text text--300-16">
+              Tollit argumentum genau Saepe lobortis
+            </p>
+          </div>
+          <div class="row row--vertical">
+            <img src="/assets/icons/awards/award3.svg" />
+            <p class="text text--300-16">
+              Tollit argumentum genau Saepe lobortis
+            </p>
+          </div>
+          <div class="row row--vertical">
+            <img src="/assets/icons/awards/award4.svg" />
+            <p class="text text--300-16">
               Tollit argumentum genau Saepe lobortis
             </p>
           </div>
@@ -218,54 +271,102 @@
     <section class="break__section">
       <div class="page__container">
         <div class="gray__line"></div>
-        <div class="bw__logo__wrapper"><img src="" class="bw__logo" /></div>
+        <div class="bw__logo__wrapper">
+          <img src="/assets/icons/logo/bl-withdots.svg" class="bw__logo" />
+        </div>
         <div class="gray__line"></div>
       </div>
     </section>
-    <footer>
+
+    <section class="section">
       <div class="page__container">
-        <div class="row">
+        <div class="row row--vertical gap--large">
           <div class="row row--vertical">
-            <div class="row">
-              <img class="footer__icon" src="" />
+            <p class="text text--bold-22">Empfehlungs</p>
+            <h2 class="text text--bold-32">Was die Leute über uns sagen</h2>
+          </div>
+          <div class="slider__card">
+            <img src="/assets/slider-section/znak.svg" class="quotes" />
+            <div class="row row--vertical gap--large">
+              <img
+                src="/assets/slider-section/grillicon.svg"
+                alt=""
+                class="slider__card__icon"
+              />
+              <img
+                src="/assets/slider-section/zvezdice.svg"
+                alt=""
+                class="slider__card__rating"
+              />
+              <p class="text text--300-16">
+                Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
+                Ut Turnbeutel nostrud exercitation ullamco .
+              </p>
+            </div>
+            <div class="row row--vertical">
+              <p class="text text--regular-16">Halling Tobias</p>
+              <p class="text text--300-16">Koch</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="page__container upper__footer">
+        <div class="row">
+          <div class="row row--vertical gap--large first__column__footer">
+            <div class="">
+              <img src="/assets/icons/footer/location.png" />
               <p class="text text--regular-16">
                 Klauprechtstraße 25 76137 Karlsruhe, Germany
               </p>
             </div>
-            <div class="row">
-              <img class="footer__icon" src="" />
+            <div class="">
+              <img src="/assets/icons/footer/telephone.png" />
               <p class="text text--regular-16">+49 721 358060</p>
             </div>
-            <div class="row">
-              <img class="footer__icon" src="" />
+            <div class="">
+              <img src="/assets/icons/footer/mail.png" />
               <p class="text text--regular-16">info@partyservice-brath.de</p>
             </div>
           </div>
+          <div class="footer__logo__wrapper">
+            <img class="" src="/assets/icons/logo/logo-with-dots.svg" />
+          </div>
+          <div class="row last__column__footer">
+            <p class="text text--regular-16">Besuchen Sie uns auf:</p>
+            <div class="row gap--small">
+              <div>
+                <img src="/assets/icons/footer/instagram.svg" />
+              </div>
+              <div>
+                <img src="/assets/icons/footer/facebook.svg" />
+              </div>
+              <div>
+                <img src="/assets/icons/footer/x.svg" />
+              </div>
+              <div>
+                <img src="/assets/icons/footer/youtube.svg" />
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="nav__logo__wrapper">
-          <img class="logo" src="" />
-        </div>
-        <div class="row">
-          <p class="text text--regular-16">Besuchen Sie uns auf:</p>
-          <div class="sm__icons"><img src="" /></div>
-          <div class="sm__icons"><img src="" /></div>
-          <div class="sm__icons"><img src="" /></div>
-          <div class="sm__icons"><img src="" /></div>
+      </div>
+      <div class="lower__footer">
+        <div class="page__container">
+          <div class="row">
+            <p class="text text--regular-14">
+              © 2020 by Metzgerei Heiko Brath GmbH, Deutschland
+            </p>
+            <p class="text text--regular-14">
+              Code and design by
+              <span class="text text--regular-14-italic">StudioPresent</span>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
-    <section class="page__bottom">
-      <div class="page__container">
-        <div class="row">
-          <p class="text text--regular-14">
-            © 2020 by Metzgerei Heiko Brath GmbH, Deutschland
-          </p>
-          <p class="text text--regular-14">
-            Code and design by
-            <span class="text text--regular-14-italic">StudioPresent</span>
-          </p>
-        </div>
-      </div>
-    </section>
   </body>
 </html>
