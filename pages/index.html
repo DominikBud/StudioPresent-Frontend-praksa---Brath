@@ -10,7 +10,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
+    <script type="module/javascript" src="/scripts.js"></script>
+
     <title>Brath</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <nav class="nav__wrapper">
@@ -29,12 +37,29 @@
             <a class="text text--regular-16">Impressum</a>
             <a class="text text--regular-16">Kontakt</a>
           </div>
+
           <a class="link">
             <div class="row">
               <img class="pdf__icon" src="/assets/icons/pdf-icon.svg" />
               <span class="text text--bold-14">download</span>
             </div>
           </a>
+
+          <div class="mobile__menu__wrapper">
+            <a class="mobile__menu__icon">
+              <img src="/assets/hamburger-icon.png" />
+            </a>
+            <div class="menu__links__wrapper mobile__menu__hidden">
+              <a class="text text--regular-16">Die Metzgerei</a>
+              <a class="text text--regular-16">Dry Aged</a>
+              <a class="text text--regular-16">Fleischversand</a>
+              <a class="text text--regular-16">Events/Kurse</a>
+              <a class="text text--regular-16">Partyservice</a>
+              <a class="text text--regular-16">Tagesessen</a>
+              <a class="text text--regular-16">Impressum</a>
+              <a class="text text--regular-16">Kontakt</a>
+            </div>
+          </div>
         </div>
       </div>
       <div class="bottom__wrapper">
@@ -179,7 +204,9 @@
       </div>
     </section>
     <section class="split__section">
-      <div class="split__column split__column--padding-backgroundColor">
+      <div
+        class="split__column spices__column split__column--padding-backgroundColor"
+      >
         <div class="row row--vertical gap--xl">
           <div class="row row--vertical">
             <h2 class="text text--bold-32">Buchen Sie den Grillkurs jetzt</h2>
@@ -285,71 +312,133 @@
             <p class="text text--bold-22">Empfehlungs</p>
             <h2 class="text text--bold-32">Was die Leute über uns sagen</h2>
           </div>
-          <div class="slider__card">
-            <img src="/assets/slider-section/znak.svg" class="quotes" />
-            <div class="row row--vertical gap--large">
-              <img
-                src="/assets/slider-section/grillicon.svg"
-                alt=""
-                class="slider__card__icon"
-              />
-              <img
-                src="/assets/slider-section/zvezdice.svg"
-                alt=""
-                class="slider__card__rating"
-              />
-              <p class="text text--300-16">
-                Wiener Schnitzel amet, consectetur Handtasche elit, sed do
-                eiusmod tempor Stuttgart ut labore et dolore magna Luftballons
-                Ut Turnbeutel nostrud exercitation ullamco .
-              </p>
+          <!--   <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/assets/slider-section/znak.svg" class="quotes" />
+                  <div class="row row--vertical gap--large">
+                    <img
+                      src="/assets/slider-section/grillicon.svg"
+                      alt=""
+                      class="slider__card__icon"
+                    />
+                    <img
+                      src="/assets/slider-section/zvezdice.svg"
+                      alt=""
+                      class="slider__card__rating"
+                    />
+                    <p class="text text--300-16">
+                      Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                      eiusmod tempor Stuttgart ut labore et dolore magna
+                      Luftballons Ut Turnbeutel nostrud exercitation ullamco .
+                    </p>
+                  </div>
+                  <div class="row row--vertical">
+                    <p class="text text--regular-16">Halling Tobias</p>
+                    <p class="text text--300-16">Koch</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/assets/slider-section/znak.svg" class="quotes" />
+                  <div class="row row--vertical gap--large">
+                    <img
+                      src="/assets/slider-section/grillicon.svg"
+                      alt=""
+                      class="slider__card__icon"
+                    />
+                    <img
+                      src="/assets/slider-section/zvezdice.svg"
+                      alt=""
+                      class="slider__card__rating"
+                    />
+                    <p class="text text--300-16">
+                      Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                      eiusmod tempor Stuttgart ut labore et dolore magna
+                      Luftballons Ut Turnbeutel nostrud exercitation ullamco .
+                    </p>
+                  </div>
+                  <div class="row row--vertical">
+                    <p class="text text--regular-16">Halling Tobias</p>
+                    <p class="text text--300-16">Koch</p>
+                  </div>
+                </div>
+              </div></div>
+              <div class="swiper-slide"><div class="swiper-slide">
+                <div class="slider__card">
+                  <img src="/assets/slider-section/znak.svg" class="quotes" />
+                  <div class="row row--vertical gap--large">
+                    <img
+                      src="/assets/slider-section/grillicon.svg"
+                      alt=""
+                      class="slider__card__icon"
+                    />
+                    <img
+                      src="/assets/slider-section/zvezdice.svg"
+                      alt=""
+                      class="slider__card__rating"
+                    />
+                    <p class="text text--300-16">
+                      Wiener Schnitzel amet, consectetur Handtasche elit, sed do
+                      eiusmod tempor Stuttgart ut labore et dolore magna
+                      Luftballons Ut Turnbeutel nostrud exercitation ullamco .
+                    </p>
+                  </div>
+                  <div class="row row--vertical">
+                    <p class="text text--regular-16">Halling Tobias</p>
+                    <p class="text text--300-16">Koch</p>
+                  </div>
+                </div>
+              </div></div>
             </div>
-            <div class="row row--vertical">
-              <p class="text text--regular-16">Halling Tobias</p>
-              <p class="text text--300-16">Koch</p>
-            </div>
-          </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+
+            <div class="swiper-scrollbar"></div>
+          </div> -->
         </div>
       </div>
     </section>
 
     <footer>
       <div class="page__container upper__footer">
-        <div class="row">
-          <div class="row row--vertical gap--large first__column__footer">
-            <div class="">
-              <img src="/assets/icons/footer/location.png" />
-              <p class="text text--regular-16">
-                Klauprechtstraße 25 76137 Karlsruhe, Germany
-              </p>
-            </div>
-            <div class="">
-              <img src="/assets/icons/footer/telephone.png" />
-              <p class="text text--regular-16">+49 721 358060</p>
-            </div>
-            <div class="">
-              <img src="/assets/icons/footer/mail.png" />
-              <p class="text text--regular-16">info@partyservice-brath.de</p>
-            </div>
+        <div class="row row--vertical gap--large first__column__footer">
+          <div class="">
+            <img src="/assets/icons/footer/location.png" />
+            <p class="text text--regular-16">
+              Klauprechtstraße 25 76137 Karlsruhe, Germany
+            </p>
           </div>
-          <div class="footer__logo__wrapper">
-            <img class="" src="/assets/icons/logo/logo-with-dots.svg" />
+          <div class="">
+            <img src="/assets/icons/footer/telephone.png" />
+            <p class="text text--regular-16">+49 721 358060</p>
           </div>
-          <div class="row last__column__footer">
-            <p class="text text--regular-16">Besuchen Sie uns auf:</p>
-            <div class="row gap--small">
-              <div>
-                <img src="/assets/icons/footer/instagram.svg" />
-              </div>
-              <div>
-                <img src="/assets/icons/footer/facebook.svg" />
-              </div>
-              <div>
-                <img src="/assets/icons/footer/x.svg" />
-              </div>
-              <div>
-                <img src="/assets/icons/footer/youtube.svg" />
-              </div>
+          <div class="">
+            <img src="/assets/icons/footer/mail.png" />
+            <p class="text text--regular-16">info@partyservice-brath.de</p>
+          </div>
+        </div>
+        <div class="footer__logo__wrapper">
+          <img class="" src="/assets/icons/logo/logo-with-dots.svg" />
+        </div>
+        <div class="row last__column__footer">
+          <p class="text text--regular-16">Besuchen Sie uns auf:</p>
+          <div class="row gap--small">
+            <div>
+              <img src="/assets/icons/footer/instagram.svg" />
+            </div>
+            <div>
+              <img src="/assets/icons/footer/facebook.svg" />
+            </div>
+            <div>
+              <img src="/assets/icons/footer/x.svg" />
+            </div>
+            <div>
+              <img src="/assets/icons/footer/youtube.svg" />
             </div>
           </div>
         </div>
